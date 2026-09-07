@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Privacy policy for the Avert AI Android app: what it collects, why, who it reaches, and how to have it deleted.">
+<title>Avert AI Privacy Policy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Public+Sans:wght@400;500;600&display=swap">
+
+<style>
+  :root {
+    --ground:      #FBFBFC;
+    --surface:     #FFFFFF;
+    --ink:         #16181B;
+    --ink-soft:    #565C64;
+    --ink-faint:   #7C838C;
+    --rule:        #E3E6EA;
+    --accent:      #1F5F70;
+    --accent-soft: #EAF2F4;
+    --serif: "Newsreader", Georgia, "Times New Roman", serif;
+    --sans:  "Public Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground:      #0F1113;
+      --surface:     #16191C;
+      --ink:         #E7EAED;
+      --ink-soft:    #A5ACB4;
+      --ink-faint:   #838B94;
+      --rule:        #272C31;
+      --accent:      #7CBACB;
+      --accent-soft: #16262B;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --ground:      #0F1113;
+    --surface:     #16191C;
+    --ink:         #E7EAED;
+    --ink-soft:    #A5ACB4;
+    --ink-faint:   #838B94;
+    --rule:        #272C31;
+    --accent:      #7CBACB;
+    --accent-soft: #16262B;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 16.5px;
+    line-height: 1.68;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 43rem;
+    margin: 0 auto;
+    padding: 56px 24px 96px;
+  }
+
+  /* ---- masthead ---- */
+  .masthead {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .mark { width: 34px; height: 34px; flex: none; color: var(--ink); }
+  .mark svg { display: block; width: 100%; height: 100%; }
+  .masthead-text { display: flex; flex-direction: column; gap: 1px; }
+  .app-name {
+    font-family: var(--sans);
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: -0.01em;
+  }
+  .app-meta {
+    font-size: 12.5px;
+    color: var(--ink-faint);
+    font-variant-numeric: tabular-nums;
+  }
+
+  h1 {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: clamp(2rem, 5vw, 2.7rem);
+    line-height: 1.14;
+    letter-spacing: -0.018em;
+    text-wrap: balance;
+    margin: 40px 0 10px;
+  }
+
+  .standfirst {
+    font-size: 17px;
+    color: var(--ink-soft);
+    max-width: 36rem;
+    margin: 0 0 8px;
+  }
+
+  .updated {
+    font-size: 13px;
+    color: var(--ink-faint);
+    font-variant-numeric: tabular-nums;
+    margin: 0;
+  }
+
+  h2 {
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: 1.32rem;
+    letter-spacing: -0.008em;
+    line-height: 1.3;
+    text-wrap: balance;
+    margin: 52px 0 4px;
+    padding-top: 22px;
+    border-top: 1px solid var(--rule);
+  }
+
+  p { margin: 12px 0; }
+  a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+  strong { font-weight: 600; }
+
+  ul { margin: 12px 0; padding-left: 1.15rem; display: flex; flex-direction: column; gap: 9px; }
+  li::marker { color: var(--ink-faint); }
+
+  code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.88em;
+    background: var(--accent-soft);
+    color: var(--accent);
+    padding: 1.5px 6px;
+    border-radius: 4px;
+  }
+
+  /* The one element that earns emphasis: a safety disclaimer on an
+     emergency app is the thing a reader must not skim past. */
+  .disclaimer {
+    margin: 30px 0;
+    padding: 18px 20px;
+    background: var(--accent-soft);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 6px 6px 0;
+    font-size: 15.5px;
+  }
+  .disclaimer p { margin: 0; }
+  .disclaimer p + p { margin-top: 9px; }
+
+  .table-scroll { overflow-x: auto; margin: 18px 0; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14.6px;
+    min-width: 30rem;
+  }
+  caption {
+    caption-side: top;
+    text-align: left;
+    font-size: 11.5px;
+    font-weight: 600;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    padding-bottom: 9px;
+  }
+  th, td {
+    text-align: left;
+    vertical-align: top;
+    padding: 11px 14px 11px 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  th {
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    border-bottom-color: var(--ink-faint);
+  }
+  td:first-child { font-weight: 500; padding-right: 22px; width: 38%; }
+  td:last-child, th:last-child { padding-right: 0; color: var(--ink-soft); }
+
+  .contact {
+    margin-top: 52px;
+    padding: 20px 22px;
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+  }
+  .contact p { margin: 0; }
+  .contact p + p { margin-top: 6px; }
+  .contact .label {
+    font-size: 11.5px;
+    font-weight: 600;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+  }
+
+  footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--rule);
+    font-size: 13px;
+    color: var(--ink-faint);
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="masthead">
+    <div class="mark" aria-hidden="true">
+      <svg viewBox="0 0 175 175" xmlns="http://www.w3.org/2000/svg">
+        <path fill="currentColor" d="M87.4999 77L98.8749 63C100.625 45.5 96.2499 29.75 87.4999 17.5C78.7499 29.75 74.3749 45.5 76.1249 63L87.4999 77Z"/>
+        <path fill="currentColor" d="M94.9244 80.0755L112.867 78.2194C126.479 67.0824 134.522 52.8519 136.997 38.0027C122.148 40.4775 107.918 48.5209 96.7806 62.1327L94.9244 80.0755Z"/>
+        <path fill="currentColor" d="M98 87.4999L112 98.8749C129.5 100.625 145.25 96.2499 157.5 87.4999C145.25 78.7499 129.5 74.3749 112 76.1249L98 87.4999Z"/>
+        <path fill="currentColor" d="M94.9245 94.9244L96.7806 112.867C107.918 126.479 122.148 134.522 136.997 136.997C134.522 122.148 126.479 107.918 112.867 96.7806L94.9245 94.9244Z"/>
+        <path fill="currentColor" d="M87.5001 98L76.1251 112C74.3751 129.5 78.7501 145.25 87.5001 157.5C96.2501 145.25 100.625 129.5 98.8751 112L87.5001 98Z"/>
+        <path fill="currentColor" d="M80.0756 94.9245L62.1327 96.7806C48.5209 107.918 40.4776 122.148 38.0027 136.997C52.852 134.522 67.0825 126.479 78.2194 112.867L80.0756 94.9245Z"/>
+        <path fill="currentColor" d="M77 87.5001L63 76.1251C45.5 74.3751 29.75 78.7501 17.5 87.5001C29.75 96.2501 45.5 100.625 63 98.8751L77 87.5001Z"/>
+        <path fill="currentColor" d="M80.0755 80.0756L78.2194 62.1327C67.0824 48.5209 52.8519 40.4776 38.0027 38.0027C40.4775 52.852 48.5209 67.0825 62.1327 78.2194L80.0755 80.0756Z"/>
+      </svg>
+    </div>
+    <div class="masthead-text">
+      <span class="app-name">Avert AI</span>
+      <span class="app-meta">Android &middot; com.santhoshkumar099.avertai</span>
+    </div>
+  </header>
+
+  <h1>Privacy Policy</h1>
+  <p class="standfirst">What Avert AI collects, why it collects it, who it reaches, and how to have it deleted.</p>
+  <p class="updated">Last updated 7 September 2026</p>
+
+  <div class="disclaimer">
+    <p><strong>Avert AI is not a medical device, and it does not replace emergency services.</strong> In a real emergency, call your local emergency number directly.</p>
+    <p>Guidance from the in-app assistant is general information, not a diagnosis or medical advice.</p>
+  </div>
+
+  <h2>Who is responsible for your data</h2>
+  <p>Avert AI is operated by the individual developer who publishes it on Google Play. Any privacy question, correction, or deletion request goes to the address at the end of this page, and is answered directly.</p>
+
+  <h2>What is collected, and why</h2>
+  <p>Everything below is collected because a specific feature needs it. Nothing is gathered speculatively, and nothing is collected in the background for profiling.</p>
+
+  <div class="table-scroll">
+    <table>
+      <caption>Collected data</caption>
+      <thead>
+        <tr><th scope="col">Data</th><th scope="col">Why</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Name, email address and profile photo, from Google Sign-In</td>
+          <td>To create and identify your account. Google Sign-In is the only way to sign in.</td>
+        </tr>
+        <tr>
+          <td>Date of birth, sex, conditions, allergies, blood group, medications, critical notes</td>
+          <td>To tailor the assistant to your situation, and to show responders and linked family what matters in an emergency.</td>
+        </tr>
+        <tr>
+          <td>Precise location</td>
+          <td>Attached to an SOS so family can find you, and used to list nearby hospitals. Read when you raise an SOS or open the hospital finder &mdash; not continuously.</td>
+        </tr>
+        <tr>
+          <td>Photos from your camera or library</td>
+          <td>Only images you choose to attach: a profile picture, a photo on an SOS, a medical document, or a picture sent to the assistant.</td>
+        </tr>
+        <tr>
+          <td>Microphone audio</td>
+          <td>Only while you record a voice check-in. The audio is transcribed and the transcript is kept.</td>
+        </tr>
+        <tr>
+          <td>Messages you write</td>
+          <td>Your conversations with the assistant, and chats with linked family.</td>
+        </tr>
+        <tr>
+          <td>Check-ins and activity</td>
+          <td>To show your own history and trends inside the app.</td>
+        </tr>
+        <tr>
+          <td>Push notification token</td>
+          <td>To deliver emergency alerts and reminders to your device.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>Avert AI does not read your contacts, does not track you across other apps or websites, and carries no advertising and no advertising identifiers.</p>
+
+  <h2>Who your data reaches</h2>
+  <ul>
+    <li><strong>Family you link.</strong> Linking is deliberate and needs a code you generate or redeem. A linked person receives your SOS alerts &mdash; including your location and any photo you attached &mdash; and can exchange messages with you. You choose who is linked, and nobody else sees your data.</li>
+    <li><strong>Supabase</strong> hosts the database, file storage and backend functions.</li>
+    <li><strong>Google (Gemini)</strong> processes the text, voice transcript or image you send the assistant, to produce its reply.</li>
+    <li><strong>Sarvam AI</strong> handles speech-to-text and text-to-speech for voice check-ins across the eleven supported Indian languages.</li>
+    <li><strong>Expo</strong> delivers push notifications to your device.</li>
+    <li><strong>Mapbox and OpenStreetMap</strong> render maps and locate nearby hospitals.</li>
+  </ul>
+  <p>Your data is never sold, rented, or handed to advertisers or data brokers.</p>
+
+  <h2>How it is protected</h2>
+  <p>Data travels over encrypted HTTPS and is stored on Supabase's managed infrastructure. Row-level security rules mean you can read your own records and only what a linked family member has explicitly been granted. Photos and medical documents sit in private storage and are served through short-lived signed links rather than public URLs.</p>
+
+  <h2>Keeping and deleting</h2>
+  <p>Your data is kept for as long as your account exists. Inside the app you can delete individual items as you go &mdash; messages, whole conversations, medical entries, and documents.</p>
+  <p>To delete the account itself and everything attached to it, email the address below from the account's own email address. The account and its data are then deleted.</p>
+
+  <h2>Children</h2>
+  <p>Avert AI is not directed at children under 13 and accounts are not knowingly created for them. A minor may be covered as an at-risk person only through a parent or guardian who manages the account.</p>
+
+  <h2>Permissions the app asks for</h2>
+  <ul>
+    <li><strong>Location</strong> &mdash; SOS alerts and nearby hospitals.</li>
+    <li><strong>Camera and photo library</strong> &mdash; photos you choose to attach.</li>
+    <li><strong>Microphone</strong> &mdash; voice check-ins.</li>
+    <li><strong>Notifications</strong> &mdash; emergency alerts and reminders.</li>
+  </ul>
+  <p>Each is requested only when you first use the feature behind it. Any of them can be declined or later revoked in Android settings, and the rest of the app carries on working without it.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes in a way that matters, the date at the top changes with it and the revised version is published at this address.</p>
+
+  <div class="contact">
+    <p class="label">Contact</p>
+    <p>Privacy questions, corrections, and account deletion requests:</p>
+    <p><a href="mailto:santhoshkumar18916@gmail.com">santhoshkumar18916@gmail.com</a></p>
+  </div>
+
+  <footer>
+    Avert AI &middot; <code>com.santhoshkumar099.avertai</code>
+  </footer>
+
+</div>
+</body>
+</html>
