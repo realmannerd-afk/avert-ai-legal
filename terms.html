@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Terms of service for the Avert AI app: what the app is and is not, how emergency alerts work, subscriptions, and the limits of what it can promise.">
+<title>Avert AI Terms of Service</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Public+Sans:wght@400;500;600&display=swap">
+
+<style>
+  :root {
+    --ground:      #FBFBFC;
+    --surface:     #FFFFFF;
+    --ink:         #16181B;
+    --ink-soft:    #565C64;
+    --ink-faint:   #7C838C;
+    --rule:        #E3E6EA;
+    --accent:      #1F5F70;
+    --accent-soft: #EAF2F4;
+    --serif: "Newsreader", Georgia, "Times New Roman", serif;
+    --sans:  "Public Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground:      #0F1113;
+      --surface:     #16191C;
+      --ink:         #E7EAED;
+      --ink-soft:    #A5ACB4;
+      --ink-faint:   #838B94;
+      --rule:        #272C31;
+      --accent:      #7CBACB;
+      --accent-soft: #16262B;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --ground:      #0F1113;
+    --surface:     #16191C;
+    --ink:         #E7EAED;
+    --ink-soft:    #A5ACB4;
+    --ink-faint:   #838B94;
+    --rule:        #272C31;
+    --accent:      #7CBACB;
+    --accent-soft: #16262B;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 16.5px;
+    line-height: 1.68;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 43rem;
+    margin: 0 auto;
+    padding: 56px 24px 96px;
+  }
+
+  /* ---- masthead ---- */
+  .masthead {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .mark { width: 34px; height: 34px; flex: none; color: var(--ink); }
+  .mark svg { display: block; width: 100%; height: 100%; }
+  .masthead-text { display: flex; flex-direction: column; gap: 1px; }
+  .app-name {
+    font-family: var(--sans);
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: -0.01em;
+  }
+  .app-meta {
+    font-size: 12.5px;
+    color: var(--ink-faint);
+    font-variant-numeric: tabular-nums;
+  }
+
+  h1 {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: clamp(2rem, 5vw, 2.7rem);
+    line-height: 1.14;
+    letter-spacing: -0.018em;
+    text-wrap: balance;
+    margin: 40px 0 10px;
+  }
+
+  .standfirst {
+    font-size: 17px;
+    color: var(--ink-soft);
+    max-width: 36rem;
+    margin: 0 0 8px;
+  }
+
+  .updated {
+    font-size: 13px;
+    color: var(--ink-faint);
+    font-variant-numeric: tabular-nums;
+    margin: 0;
+  }
+
+  h2 {
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: 1.32rem;
+    letter-spacing: -0.008em;
+    line-height: 1.3;
+    text-wrap: balance;
+    margin: 52px 0 4px;
+    padding-top: 22px;
+    border-top: 1px solid var(--rule);
+  }
+
+  p { margin: 12px 0; }
+  a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+  strong { font-weight: 600; }
+
+  ul { margin: 12px 0; padding-left: 1.15rem; display: flex; flex-direction: column; gap: 9px; }
+  li::marker { color: var(--ink-faint); }
+
+  code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.88em;
+    background: var(--accent-soft);
+    color: var(--accent);
+    padding: 1.5px 6px;
+    border-radius: 4px;
+  }
+
+  /* The one element that earns emphasis: a safety disclaimer on an
+     emergency app is the thing a reader must not skim past. */
+  .disclaimer {
+    margin: 30px 0;
+    padding: 18px 20px;
+    background: var(--accent-soft);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 6px 6px 0;
+    font-size: 15.5px;
+  }
+  .disclaimer p { margin: 0; }
+  .disclaimer p + p { margin-top: 9px; }
+
+  .table-scroll { overflow-x: auto; margin: 18px 0; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14.6px;
+    min-width: 30rem;
+  }
+  caption {
+    caption-side: top;
+    text-align: left;
+    font-size: 11.5px;
+    font-weight: 600;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    padding-bottom: 9px;
+  }
+  th, td {
+    text-align: left;
+    vertical-align: top;
+    padding: 11px 14px 11px 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  th {
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    border-bottom-color: var(--ink-faint);
+  }
+  td:first-child { font-weight: 500; padding-right: 22px; width: 38%; }
+  td:last-child, th:last-child { padding-right: 0; color: var(--ink-soft); }
+
+  .contact {
+    margin-top: 52px;
+    padding: 20px 22px;
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+  }
+  .contact p { margin: 0; }
+  .contact p + p { margin-top: 6px; }
+  .contact .label {
+    font-size: 11.5px;
+    font-weight: 600;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+  }
+
+  footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--rule);
+    font-size: 13px;
+    color: var(--ink-faint);
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="masthead">
+    <div class="mark" aria-hidden="true">
+      <svg viewBox="0 0 175 175" xmlns="http://www.w3.org/2000/svg">
+        <path fill="currentColor" d="M87.4999 77L98.8749 63C100.625 45.5 96.2499 29.75 87.4999 17.5C78.7499 29.75 74.3749 45.5 76.1249 63L87.4999 77Z"/>
+        <path fill="currentColor" d="M94.9244 80.0755L112.867 78.2194C126.479 67.0824 134.522 52.8519 136.997 38.0027C122.148 40.4775 107.918 48.5209 96.7806 62.1327L94.9244 80.0755Z"/>
+        <path fill="currentColor" d="M98 87.4999L112 98.8749C129.5 100.625 145.25 96.2499 157.5 87.4999C145.25 78.7499 129.5 74.3749 112 76.1249L98 87.4999Z"/>
+        <path fill="currentColor" d="M94.9245 94.9244L96.7806 112.867C107.918 126.479 122.148 134.522 136.997 136.997C134.522 122.148 126.479 107.918 112.867 96.7806L94.9245 94.9244Z"/>
+        <path fill="currentColor" d="M87.5001 98L76.1251 112C74.3751 129.5 78.7501 145.25 87.5001 157.5C96.2501 145.25 100.625 129.5 98.8751 112L87.5001 98Z"/>
+        <path fill="currentColor" d="M80.0756 94.9245L62.1327 96.7806C48.5209 107.918 40.4776 122.148 38.0027 136.997C52.852 134.522 67.0825 126.479 78.2194 112.867L80.0756 94.9245Z"/>
+        <path fill="currentColor" d="M77 87.5001L63 76.1251C45.5 74.3751 29.75 78.7501 17.5 87.5001C29.75 96.2501 45.5 100.625 63 98.8751L77 87.5001Z"/>
+        <path fill="currentColor" d="M80.0755 80.0756L78.2194 62.1327C67.0824 48.5209 52.8519 40.4776 38.0027 38.0027C40.4775 52.852 48.5209 67.0825 62.1327 78.2194L80.0755 80.0756Z"/>
+      </svg>
+    </div>
+    <div class="masthead-text">
+      <span class="app-name">Avert AI</span>
+      <span class="app-meta">iOS &amp; Android &middot; com.santhoshkumar099.avertai</span>
+    </div>
+  </header>
+
+  <h1>Terms of Service</h1>
+  <p class="standfirst">What Avert AI is, what it cannot promise, how subscriptions work, and where the responsibility sits.</p>
+  <p class="updated">Last updated 23 September 2026</p>
+
+  <div class="disclaimer">
+    <p><strong>Avert AI is not a medical device, and it is not an emergency service.</strong> It does not contact the police, an ambulance or any government service on your behalf. In a real emergency, call your local emergency number directly.</p>
+    <p>An alert can fail to arrive. Never rely on this app as your only way of getting help.</p>
+  </div>
+
+  <p>These terms govern your use of the Avert AI app and everything it connects to. By creating an account you agree to them. If you do not agree, do not use the app. Avert AI is operated by the individual developer who publishes it, reachable at the address at the end of this page.</p>
+
+  <h2>What the app does</h2>
+  <p>Avert AI stores the medical information you enter, raises an alert to family members you have linked, shows hospitals near you, records daily check-ins, and answers health questions through an AI assistant.</p>
+  <p>The assistant gives general information. It does not diagnose, treat, cure or prevent any condition, and nothing it says is a substitute for a qualified doctor. If a reply ever contradicts your doctor, your doctor is right.</p>
+
+  <h2>Why an alert might not arrive</h2>
+  <p>An SOS travels over the internet to phones you do not control. It can fail or be delayed for reasons nobody here can prevent.</p>
+
+  <div class="table-scroll">
+    <table>
+      <caption>Things that stop an alert</caption>
+      <thead>
+        <tr><th scope="col">Cause</th><th scope="col">What happens</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>No mobile data or network coverage</td><td>The alert cannot be sent at all</td></tr>
+        <tr><td>A flat or switched-off phone, yours or theirs</td><td>Nothing is sent, or nothing is received</td></tr>
+        <tr><td>Notifications disabled, or the app deleted, on their phone</td><td>The alert arrives but is never seen</td></tr>
+        <tr><td>Location permission denied, or GPS blocked indoors</td><td>The alert is sent without a location</td></tr>
+        <tr><td>An outage at Apple, Google, or a provider the app relies on</td><td>Delivery is delayed or lost</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>No guarantee is made that an alert will be delivered, delivered quickly, or acted on.</p>
+
+  <h2>Your account</h2>
+  <p>You must be at least 16 years old. You are responsible for keeping your sign-in secure and for everything done through your account.</p>
+  <p>The medical information you store is only as useful as it is accurate. Keeping it current is your responsibility, and nobody else can do it for you.</p>
+
+  <h2>Linking family</h2>
+  <p>Linking is two-sided: the other person must accept before anything is shared. Once linked, they can see your emergency alerts, your location at the moment of an alert, and the messages you send them in the app. You can remove a link at any time from inside the app.</p>
+  <p>Link only people you genuinely want to receive that information.</p>
+
+  <h2>Subscriptions</h2>
+  <p>Emergency SOS, family alerts, your medical profile and daily check-ins are free, and they stay free. Avert AI Premium is a paid, automatically renewing subscription that adds unlimited AI conversations, voice companion check-ins and advanced health history.</p>
+  <ul>
+    <li>Payment is charged to your Apple Account or Google account when you confirm the purchase.</li>
+    <li>It renews automatically unless cancelled at least 24 hours before the current period ends.</li>
+    <li>Renewal is charged within 24 hours before the period ends.</li>
+    <li>Cancel it in your Apple Account or Google Play settings. It cannot be cancelled from inside this app, and it cannot be cancelled on your behalf.</li>
+  </ul>
+  <p><strong>Refunds are handled by whichever store took the payment</strong>, under Apple's or Google's own policies. No refund is processed directly here.</p>
+  <p>Prices may change for future billing periods. You will be told before a change takes effect, and you can cancel if you do not accept it.</p>
+
+  <h2>What you agree not to do</h2>
+  <ul>
+    <li>Raise false alerts, or alarm people deliberately.</li>
+    <li>Store or send another person's medical information without their consent.</li>
+    <li>Harass, threaten or abuse anyone through the in-app chat.</li>
+    <li>Try to reach accounts or data that are not yours.</li>
+    <li>Reverse engineer, scrape, or deliberately overload the service.</li>
+  </ul>
+
+  <h2>Services this app relies on</h2>
+  <p>Parts of Avert AI are delivered by other companies. Data reaches them only to perform the function you asked for, and none of them use it for their own purposes.</p>
+
+  <div class="table-scroll">
+    <table>
+      <caption>Third-party services</caption>
+      <thead>
+        <tr><th scope="col">Service</th><th scope="col">What it does</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Supabase</td><td>Stores your account, medical profile and messages</td></tr>
+        <tr><td>Mapbox</td><td>Maps and the nearby hospital search</td></tr>
+        <tr><td>Google Gemini</td><td>Generates the assistant's replies</td></tr>
+        <tr><td>Sarvam AI</td><td>Converts your speech to text, and replies back to speech</td></tr>
+        <tr><td>RevenueCat</td><td>Manages subscriptions</td></tr>
+        <tr><td>Expo</td><td>Delivers push notifications</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Your data</h2>
+  <p>How information is collected, used and stored is set out in the <a href="./">Privacy Policy</a>. You can delete your account and everything attached to it from inside the app, or through the <a href="delete-account.html">account deletion page</a>.</p>
+
+  <h2>Availability and changes</h2>
+  <p>The app aims to stay running but uninterrupted availability is not guaranteed. Features may be added, changed or removed, and the service may be suspended or ended. Where a change materially reduces what you have paid for, you may cancel your subscription through your store.</p>
+
+  <h2>Ending your use</h2>
+  <p>You may stop using the app and delete your account at any time. An account that breaches these terms may be suspended or closed. Ending your account does not entitle you to a refund of amounts already charged, except where the law requires one.</p>
+
+  <h2>Limits of responsibility</h2>
+  <p>To the fullest extent the law allows, no liability is accepted for indirect or consequential loss, or for loss arising from an alert that was not delivered, was delayed, or was not acted on. Total liability for any claim is limited to what you paid in the twelve months before it.</p>
+  <p>Nothing here limits liability that cannot lawfully be limited, including for death or personal injury caused by negligence, or for fraud.</p>
+
+  <h2>Which law applies</h2>
+  <p>These terms are governed by the laws of India, and Indian courts have jurisdiction over any dispute. If you are a consumer, this does not remove any protection you have under the law of the country you live in.</p>
+
+  <h2>Changes to these terms</h2>
+  <p>These terms may be updated. The date at the top shows when they last changed, and continuing to use the app after a change means you accept it. Where a change is significant, a reasonable effort will be made to say so in the app.</p>
+
+  <div class="contact">
+    <p class="label">Questions about these terms</p>
+    <p><a href="mailto:appavertai@gmail.com">appavertai@gmail.com</a></p>
+    <p>Answered directly, by the developer.</p>
+  </div>
+
+  <footer>
+    Avert AI &middot; <code>com.santhoshkumar099.avertai</code>
+  </footer>
+
+</div>
+</body>
+</html>
